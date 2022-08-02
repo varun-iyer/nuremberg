@@ -4,7 +4,8 @@
 #
 # to update requirements.txt and nuremberg/core/tests/requirements.txt
 
-Django~=3.1.7
+# LTS through 2024
+Django~=3.2.14
 
 # DB
 dj-database-url==0.5.0

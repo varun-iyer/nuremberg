@@ -4,7 +4,7 @@
 #
 #    pip-compile
 #
-asgiref==3.3.1
+asgiref==3.5.2
     # via django
 certifi==2018.11.29
     # via requests
@@ -24,7 +24,7 @@ django-proxy==1.2.1
     # via -r requirements.in
 django-static-precompiler==2.0
     # via -r requirements.in
-django==3.1.7
+django==3.2.14
     # via
     #   -r requirements.in
     #   django-haystack
