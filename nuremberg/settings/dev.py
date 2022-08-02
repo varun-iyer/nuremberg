@@ -5,7 +5,7 @@ SECRET_KEY = '@xf59!g4b(=z==*@#(0hdjc$_q5taw-t-1m#9@o!nzx_h1z@r9'
 DEBUG = True
 COMPRESS_ENABLED = False
 DATABASES['default'] = {
-  'ENGINE': 'django.db.backends.postgresql',
+  'ENGINE': 'django.db.backends.sqlite3',
   'NAME': 'nuremberg_dev',
   'USER': 'nuremberg',
   'HOST': 'localhost',
