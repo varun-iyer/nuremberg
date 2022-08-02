@@ -30,3 +30,6 @@ whitenoise~=5.2.0
 
 # Development
 pip-tools==5.5.0
+
+# testing
+pytest >= 7.1.2
