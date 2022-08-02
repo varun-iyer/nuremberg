@@ -3,16 +3,17 @@ version: '2'
 services:
 
   db:
-    image: mysql:5.6
+    image: registry.lil.tools/library/postgres:12.8
     environment:
-        MYSQL_ROOT_PASSWORD: ''
-        MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
+        - POSTGRES_PASSWORD=example
     volumes:
       # NAMED VOLUMES
       # If the volume contains a database (a subdirectory named mysql)
       # when you start the container, it will be left untouched and unaffected
       # by changes to environment variables like $MYSQL_ROOT_PASSWORD.
-      - db_data:/var/lib/mysql:delegated
+      - db_data:/var/lib/postgresql/data:delegated
+    ports:
+      - "127.0.0.1:54320:5432"
   solr:
     build:
       context: ./

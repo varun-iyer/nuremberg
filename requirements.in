@@ -11,7 +11,7 @@ mysqlclient==2.0.3
 dj-database-url==0.5.0
 
 # Search
-lxml>=4.6.2
+lxml>=4.9.1
 django-haystack==3.0.0
 pysolr==3.9.0
 requests==2.25.1

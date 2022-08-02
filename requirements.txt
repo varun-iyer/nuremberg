@@ -17,7 +17,7 @@ django-static-precompiler==2.0
 django==3.1.7
 gunicorn==20.0.4
 idna==2.8                 # via requests
-lxml==4.6.2
+lxml==4.9.1
 mysqlclient==2.0.3
 pip-tools==5.5.0
 pysolr==3.9.0
