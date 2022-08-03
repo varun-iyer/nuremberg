@@ -14,6 +14,8 @@ RUN curl -sL https://deb.nodesource.com/setup_18.x | bash - \
     && apt-get install -y nodejs \
     && npm install -g less
 
+RUN apt install sqlite3
+
 COPY requirements.txt ./requirements.txt
 COPY nuremberg/core/tests/requirements.txt ./test-requirements.txt
 RUN pip install pip==22.0.4 \
