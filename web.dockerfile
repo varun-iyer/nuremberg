@@ -17,8 +17,7 @@ RUN curl -sL https://deb.nodesource.com/setup_18.x | bash - \
 RUN apt install sqlite3
 
 COPY requirements.txt ./requirements.txt
-COPY nuremberg/core/tests/requirements.txt ./test-requirements.txt
 RUN pip install pip==22.0.4 \
-    && pip install -r requirements.txt -r test-requirements.txt \
+    && pip install -r requirements.txt \
     && rm requirements.txt \
     && rm test-requirements.txt
