@@ -19,5 +19,4 @@ RUN apt install sqlite3
 COPY requirements.txt ./requirements.txt
 RUN pip install pip==22.0.4 \
     && pip install -r requirements.txt \
-    && rm requirements.txt \
-    && rm test-requirements.txt
+    && rm requirements.txt
