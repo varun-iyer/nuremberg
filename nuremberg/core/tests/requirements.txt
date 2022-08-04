@@ -81,7 +81,7 @@ pytest-django==4.1.0
     # via -r nuremberg/core/tests/requirements.in
 pytest-instafail==0.4.2
     # via -r nuremberg/core/tests/requirements.in
-pytest==6.2.2
+pytest==7.1.2
     # via
     #   -r nuremberg/core/tests/requirements.in
     #   pytest-cov
